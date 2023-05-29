@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    <button onclick="saveReq()">글작성</button>
+    <a href="/board/save">글작성(링크)</a> <!--위아래 동일 버튼으로 할지 링크로 할지 차이-->
+    <button onclick="listReq()">글목록</button>
+    <button onclick="pagingReq()">페이징목록</button>
+</body>
+<script>
+//  function saveReq() {
+//
+//  } //위아래 같은 함수 요즘은 아래함수를 많이 사용
+
+  const saveReq = () => {
+    location.href = "/board/save"; //board의 save주소 요청
+  }
+  const listReq = () => {
+    location.href = "/board/";
+  }
+  const pagingReq = () => {
+    location.href = "/board/paging";
+  }
+
+
+</script>
+</html>
